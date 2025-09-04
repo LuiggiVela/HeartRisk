@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Risk Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calcula tu riesgo de infarto</h1>
+        <form id="riskForm">
+            <label>Edad:</label>
+            <input type="number" id="edad" required>
+
+            <label>Sexo:</label>
+            <select id="sexo">
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+            </select>
+
+            <label>Colesterol total (mg/dL):</label>
+            <input type="number" id="colesterol" required>
+
+            <label>Presión arterial sistólica (mmHg):</label>
+            <input type="number" id="presion" required>
+
+            <label>Diabetes:</label>
+            <select id="diabetes">
+                <option value="no">No</option>
+                <option value="si">Sí</option>
+            </select>
+
+            <label>Fuma:</label>
+            <select id="fuma">
+                <option value="no">No</option>
+                <option value="si">Sí</option>
+            </select>
+
+            <button type="submit">Calcular riesgo</button>
+        </form>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
